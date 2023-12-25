@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dailyreddit"
+version = "0.1.0"
+description = ""
+authors = ["Sharif Haason <ssh128@scarletmail.rutgers.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.7.0"
+tiktoken = "^0.5.2"
+wandb = "^0.16.1"
+langchain = "^0.0.352"
+unstructured = {extras = ["md"], version = "^0.11.6"}
+tabulate = "^0.9.0"
+pdf2image = "^1.16.3"
+chromadb = "^0.4.21"
+openai = "^1.6.1"
+jupyter = "^1.0.0"
+praw = "^7.7.1"
+markdown = "^3.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+nbformat = "^5.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
